@@ -133,7 +133,7 @@ The 17th term of an AP exceeds its 10th term by 7.Find the common difference.\\
  \end{table}
 
 
-Using the formula for the nth term of an AP (\(x(n) = x(0) + (n)d\)), where (\(x(n)\)) represents the (\(n+1\))th term of an arithmetic progression (AP)
+Using the formula for the $n$th term of an AP (\(x(n) = x(0) + (n)d\)), where (\(x(n)\)) represents the (\(n+1\))th term of an arithmetic progression (AP)
 
 \begin{align}
 x(16) &= x(0) + 16d\\
@@ -145,15 +145,15 @@ d &= 1
 
 Now, 
 \begin{align}
-f(n) = x(n) \cdot u(n) = (x(0) + nd)u(n)
+y(n) = x(n) \cdot u(n) = (x(0) + nd)u(n)
 \end{align}
 
-The z-transform of u(n) is given by
+The z-transform of $y(n)$ is given by
 \begin{align}
-F(z) &= \sum_{n=-\infty}^{\infty} f(n)z^{-n}\\
-F(z) &= \sum_{n=-\infty}^{\infty} (x(0)+nd)u(n)z^{-n}\\
-F(z) &= \sum_{n=0}^{\infty} (x(0)+nd)z^{-n}\\
-F(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + d \cdot \frac{z^{-1}}{(1 - z^{-1})^2} ; ROC:|z| > 1
+Y(z) &= \sum_{n=-\infty}^{\infty} f(n)z^{-n}\\
+Y(z) &= \sum_{n=-\infty}^{\infty} (x(0)+nd)u(n)z^{-n}\\
+Y(z) &= \sum_{n=0}^{\infty} (x(0)+nd)z^{-n}\\
+Y(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + d \cdot \frac{z^{-1}}{(1 - z^{-1})^2} ; \quad |z| > 1
 \end{align}
 
 \end{document}
