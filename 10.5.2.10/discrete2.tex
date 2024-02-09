@@ -133,25 +133,21 @@ The 17th term of an AP exceeds its 10th term by 7.Find the common difference.\\
  \end{table}
 
 
-Using the formula for the $n$th term of an AP (\(x(n) = x(0) + (n)d\)), where (\(x(n)\)) represents the (\(n+1\))th term of an arithmetic progression (AP)
+Using the equation (\(x(n) = x(0) + (n)d\),
 
 \begin{align}
-x(16) &= x(0) + 16d\\
-x(9) &= x(0) + 9d \\
 (x(0) + 16d) - (x(0) + 9d) &= 7\\
-\implies 7d &= 7\\
 \implies d &= 1
 \end{align}
 
 Now, 
 \begin{align}
-y(n) = x(n) \cdot u(n) = (x(0) + nd)u(n)
+y(n) = (x(0) + nd)u(n)
 \end{align}
 
 The z-transform of $y(n)$ is given by
 \begin{align}
-Y(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + d \cdot \frac{z^{-1}}{(1 - z^{-1})^2} ; \quad |z| > 1 \\
-\implies Y(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + 1 \cdot \frac{z^{-1}}{(1 - z^{-1})^2}
+Y(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + 1 \cdot \frac{z^{-1}}{(1 - z^{-1})^2} ; \quad |z| > 1 
 \end{align}
 
 \end{document}
