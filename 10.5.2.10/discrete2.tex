@@ -133,21 +133,13 @@ The 17th term of an AP exceeds its 10th term by 7.Find the common difference.\\
  \end{table}
 
 
-Using the equation (\(x(n) = x(0) + (n)d\),
-
-\begin{align}
-(x(0) + 16d) - (x(0) + 9d) &= 7\\
-\implies d &= 1
-\end{align}
-
-Now, 
-\begin{align}
-y(n) = (x(0) + nd)u(n)
-\end{align}
-
-The z-transform of $y(n)$ is given by
-\begin{align}
-Y(z) &= x(0) \cdot \frac{1}{1 - z^{-1}} + 1 \cdot \frac{z^{-1}}{(1 - z^{-1})^2} ; \quad |z| > 1 
+Using the equation 
+\begin{align} 
+x(n) = x(0) + n\brak{d} \\
+\brak{x(0) + 16d} - \brak{x(0) + 9d} = 7 \\
+\implies d = 1 \\
+y(n) = \brak{x(0) + nd}u(n) \\
+Y(z) = \brak{x(0)} \cdot \frac{1}{1 - z^{-1}} + \frac{z^{-1}}{(1 - z^{-1})^2} ; \quad |z| > 1 
 \end{align}
 
 \end{document}
